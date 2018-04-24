@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/humorliang/myBlog#readme",
   "dependencies": {
+    "amazeui": "^2.7.2",
     "bootstrap3": "^3.3.5",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "swiper": "^4.2.2"
   }
 }
