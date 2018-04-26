@@ -1,7 +1,46 @@
 /* 公共样式 */
 
+body {
+    background: #efefef;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+.border-0 td{
+    border-color: transparent !important;
+    border:0;
+}
+
+.font-col-1 {
+    font-size: 18px;
+    color: red;
+}
+
+.font-col-2 {
+    font-size: 18px;
+    color: tomato;
+}
+
+.font-col-3 {
+    font-size: 18px;
+    color: teal;
+}
+
+.font-col-4 {
+    font-size: 18px;
+    color: skyblue;
+}
+
 .am-g-fixed {
     max-width: 1100px;
+}
+
+@media only screen and (min-width: 641px) {
+    .main-warp {
+        min-width: 1030px;
+    }
 }
 
 /* 头部导航 */
@@ -12,11 +51,17 @@
 }
 
 header {
+    padding: 10px 0;
     overflow: hidden;
-    background: rgb(113, 224, 191);
+    background: url("../images/header_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+ 
 }
 
 header a {
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 5px;
     color: #fff;
 }
 
@@ -35,26 +80,27 @@ header nav li {
 /* 激活状态 */
 
 .active {
-    background: rgb(61, 125, 209);
+    background: rgb(111, 210, 218);
+}
+header nav li a:hover{
+    color: #efefef;
 }
 
 /* 内容部分 */
 
 .content-left {
-    background: #999;
+    padding-top: 20px;
 }
 
-.content-right {
-    height: 30px;
-    background: #678;
-}
+/* 鸡汤+轮播 */
 
 .content-left .con-lf-bar {
-    padding: 20px;
+    padding: 0 10px;
     width: 80%;
 }
-.con-lf-bar-info{
-    padding: 20px;
+
+.con-lf-bar-info {
+    padding: 0 10px;
     width: 20%;
 }
 
@@ -88,13 +134,151 @@ header nav li {
     -webkit-align-items: center;
     align-items: center;
 }
-.swiper-button-prev,.swiper-button-next{
+
+.swiper-button-prev,
+.swiper-button-next {
     height: 30px;
 }
 
 /* 鸡汤 */
-.main-content  .bar-info-con p{
+
+.main-content .bar-info-con p {
+    width: 100%;
+    height: 230px;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.bar-info-con {
+    text-overflow: ellipsis;
+}
+
+/* 最新文章 */
+
+.post-list-title {
+    margin: 10px 0;
+    padding: 0 10px;
+    border-bottom: 1px solid #678;
+}
+
+.post-list-title h2 {
+    margin: 0;
+}
+
+.post-list-items li {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.post-list-items .post-img img {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+.post-list-items .post-bottom a {
+    margin: 5px;
+}
+
+.post-list-items .post-content p {
+    margin-bottom: 10px;
+    height: 100px;
+    overflow: hidden;
+}
+
+/* 首页右半部分 */
+
+.content-right {
+    padding-top: 20px;
+}
+
+/* 个人信息 */
+
+.personal-info {
+    min-width: 330px;
+    width: 100%;
+    height: 340px;
+    border: 1px solid rgb(75, 224, 112);
+}
+
+.personal-info img {
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+}
+
+.personal-info .contact-info a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid rgb(59, 209, 147);
+    border-radius: 50%;
+    margin: 10px;
+    text-align: center;
+}
+
+.personal-info .contact-info a:nth-child(1) {
+    background: url("../images/weibo.png") no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+}
+
+.personal-info .contact-info a:nth-child(2) {
+    background: url("../images/mail.png") no-repeat;
+    background-size: 87%;
+    background-position: 3px 4px;
+}
+
+.personal-info .contact-info a:nth-child(3) {
+    background: url("../images/github.png") no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+}
+
+/* 搜索框 */
+
+.search-info {
+    margin: 20px 0;
+}
+
+.search-info-title {
+    border-bottom: 1px solid #ccc;
+}
+
+.content-right .search-info .am-form-field {
+    width: 50%;
+    margin-right: 30px;
+}
+
+/* 排行榜 */
+
+.post-rank-list-title {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.rank-list-item li {
+    margin: 10px;
+}
+
+/* 词云 */
+
+.post-cloud-title {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.post-cloud-content {
     height: 300px;
-    text-overflow: elli
-    ;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.leave-info-title {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
 }

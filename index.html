@@ -7,20 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./node_modules/amazeui/dist/css/amazeui.min.css">
     <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>博客首页</title>
 </head>
 
 <body>
     <div class="main-warp">
+        <div class="header-top am-cf am-padding-xs">
+            <a href="#" class="am-fr">about&nbsp;me</a>
+            <a href="#" class="am-fr am-margin-right-xl">HOME</a>
+        </div>
         <header>
             <nav>
                 <ul class="am-g am-g-fixed">
                     <li class="logo am-u-md-2">
                         <img src="./images/logo.png" alt="logo">
                     </li>
-                    <li class="am-u-md-2 active">
-                        <a href="#">回到门前</a>
+                    <li class="am-u-md-2">
+                        <a href="#" class=" active">回到门前</a>
                     </li>
                     <li class="am-u-md-2">
                         <a href="#">技术分享</a>
@@ -39,7 +44,7 @@
         </header>
         <div class="main-content am-g am-g-fixed">
             <div class="content-left  am-u-md-8">
-                <div class="con-lf-bar-wrap">
+                <div class="con-lf-bar-wrap am-cf">
                     <div class="con-lf-bar  am-fl">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
@@ -70,10 +75,184 @@
                         </div>
                     </div>
                 </div>
+                <div class="con-lf-post-list">
+                    <div class="post-list-title">
+                        <h2>最新文章
+                            <span></span>
+                        </h2>
+                    </div>
+                    <div class="post-list-items am-g">
+                        <ul>
+                            <li class="am-cf">
+                                <div class="post-img am-u-md-4">
+                                    <img src="./images/post.jpg" alt="" srcset="">
+                                </div>
+                                <div class="post-description am-u-md-8">
+                                    <div class="post-title">
+                                        <h3>这是一篇关于樱花的描述</h3>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>这是一片过关于樱花的很长的描述这是一片过关于樱花的很长的描述这是一片过关于樱花的很长的描述这是一片过关于樱花的很长的描述这是一片过关于樱花的很长的描述这是一片过关于樱花的很长的描述这是一片过关于樱花的很长的描述这是一片过关于樱花的很长的描述这是一片过关于樱花的很长的描述这是一片过关于樱花的很长的描
+                                            述这是一片过关于樱花的很长的描述这是一片过关于樱花 的很长的描述这是一片过关于樱花的很长的描述这是一片过关于 樱花的很长的描述
+                                        </p>
+                                    </div>
+                                    <div class="post-bottom">
+                                        <a href="#">
+                                            <i class="iconfont icon-biaoqian font-col-1"></i>
+                                            <span>技术分享</span>
+                                        </a>
+                                        <a href="#">
+                                            <i class="iconfont icon-shijian font-col-2"></i>
+                                            <time>2018-2-3</time>
+                                        </a>
+                                        <a href="#">
+                                            <i class="iconfont icon-chat font-col-3"></i>
+                                            (
+                                            <span>10</span>)</a>
+                                        <a href="#">
+                                            <i class="iconfont icon-liulan font-col-4"></i>
+                                            (
+                                            <span>10</span>)</a>
+                                        <a href="#">
+                                            <i class="iconfont icon-dianzan am-text-primary"></i>
+                                            <sapn>10</sapn>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="content-right am-u-md-4"></div>
+            <div class="content-right am-u-md-4">
+                <div class="personal-info">
+                    <h2 class="am-text-center">关注***众号</h2>
+                    <div class="personal-info-conten am-text-center">
+                        <img src="./images/post.jpg" alt="公众号">
+                    </div>
+                    <div class="contact-info am-text-center am-margin-top">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="search-info">
+                    <div class="search-info-title">
+                        <h3 class="am-margin-bottom-xs">搜索一下</h3>
+                    </div>
+                    <form method="POST" class="am-cf am-margin-top" style="position: relative;">
+                        <i class="iconfont icon-sousuo am-fl" style="position: absolute; top:7px;left: 7px;"></i>
+                        <input type="text" class="am-padding-left-lg am-form-field am-round am-fl" placeholder="搜一下" name="search" id="search-info">
+                        <button type="submit" class="am-btn am-btn-secondary am-round am-fl">搜搜</button>
+                    </form>
+                </div>
+                <div class="post-ranking-list">
+                    <div class="post-rank-list-title">
+                        <h3 class="am-margin-bottom-xs am-margin-top-sm">文章排行榜</h3>
+                    </div>
+                    <div class="rank-list-item">
+                        <ul>
+                            <li>
+                                <i class="iconfont icon-1 font-col-1"></i>
+                                <a href="#" class="am-margin-left">文章标题一</a>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-2 font-col-2"></i>
+                                <a href="#" class="am-margin-left">文章标题一</a>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-3 font-col-3"></i>
+                                <a href="#" class="am-margin-left">文章标题一</a>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-4 font-col-4"></i>
+                                <a href="#" class="am-margin-left">文章标题一</a>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-5 font-col-4"></i>
+                                <a href="#" class="am-margin-left">文章标题一</a>
+                            </li>
+                            <li>
+                                <i class="iconfont icon-6 font-col-4"></i>
+                                <a href="#" class="am-margin-left">文章标题一</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 文章归档 -->
+                    <div class="leave-info am-margin-top-sm">
+                        <div class="leave-info-title am-margin-bottom-xs">
+                            <h3 class="am-margin-bottom-xs">文章归档</h3>
+                        </div>
+                        <div class="leave-info-list">
+                            <table class="am-table border-0">
+
+                                <tr>
+                                    <td>
+                                        <a href="#">html
+                                            <span>(30)</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">css
+                                            <span>(30)</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">JavaScript
+                                            <span>(30)</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">JQuery
+                                            <span>(30)</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            Flask
+                                            <span>(30)</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Python
+                                            <span>(50)</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 词云 -->
+                    <div class="mm-time">
+                        <div class="post-cloud-title am-margin-bottom-xs">
+                            <h3 class="am-margin-bottom-xs">美女时钟</h3>
+                        </div>
+                        <div class="mm-time">
+                            <!-- http://www.sodao.com/index/bc_get?t=16%3A51 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <footer class="am-margin-top-lg">
+            <div class="link-friend am-g am-g-fixed">
+                <div class="am-u-md-2">友情链接:</div>
+                <div class="">
+                    <a class="am-u-md-2" href="#">友情1</a>
+                    <a class="am-u-md-2" href="#">友情</a>
+                    <a class="am-u-md-2" href="#">友情</a>
+                    <a class="am-u-md-2" href="#">友情</a>
+                    <a class="am-u-md-2" href="#">友情</a>
+                </div>
+            </div>
+            <div class="am-margin am-text-center">备案信息</div>
+        </footer>
     </div>
+
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
     <script src="./js/my.swiper.js"></script>
