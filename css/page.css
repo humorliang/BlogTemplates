@@ -1,5 +1,15 @@
 /* 公共样式 */
+body {
+    background: #efefef;
+}
+img{
+    width: 100%;
+}
 
+ul {
+    list-style: none;
+    padding: 0;
+}
 
 .am-g-fixed {
     max-width: 1100px;
@@ -13,7 +23,7 @@
 
 /* 头部导航 */
 
-.main-warp .logo img {
+.con-warp .logo img {
     max-width: 150px;
     width: 100%;
 }
@@ -52,4 +62,29 @@ header nav li {
 
 header nav li a:hover {
     color: #efefef;
+}
+
+/* 主要内容 */
+@media only screen and (min-width: 641px){
+    .am-g-fixed{
+        min-width: 1050px;
+    }
+}
+.main-con>div{
+    border: 1px solid #ccc;
+}
+/*标题 */
+.border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+
+/* 文章列表项 */
+.post-con-footer li>a {
+    margin: 0 10px;
+}
+.post-con-footer li a img{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: bottom;
 }

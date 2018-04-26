@@ -15,7 +15,7 @@
 <body>
     <div class="main-warp">
         <div class="header-top am-cf am-padding-xs">
-            <a href="#" class="am-fr">about&nbsp;me</a>
+            <a href="#" class="am-fr">About&nbsp;me</a>
             <a href="#" class="am-fr am-margin-right-xl">HOME</a>
         </div>
         <header>
@@ -252,8 +252,21 @@
             <div class="am-margin am-text-center">备案信息</div>
         </footer>
     </div>
-
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        // 导航鼠标hover样式
+        $(document).ready(function () {
+            $('header li a').on({
+                mouseover: function () {
+                    $(this).addClass('active');
+                },
+                mouseout: function () {
+                    $(this).removeClass('active');
+                    $('header li a').first().addClass('active');
+                }
+            })
+        });
+    </script>
     <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
     <script src="./js/my.swiper.js"></script>
     <script src="./node_modules/amazeui/dist/js/amazeui.min.js"></script>
