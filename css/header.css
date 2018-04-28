@@ -1,0 +1,83 @@
+/* 公共样式 */
+
+body {
+    background: #efefef;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 表格 */
+
+.am-table>tbody>tr>td,
+.am-table>tbody>tr>th,
+.am-table>tfoot>tr>td,
+.am-table>tfoot>tr>th,
+.am-table>thead>tr>td,
+.am-table>thead>tr>th {
+    border-top: transparent;
+}
+
+.am-g-fixed {
+    max-width: 1100px;
+}
+
+@media only screen and (min-width: 641px) {
+    .main-warp {
+        min-width: 1030px;
+    }
+}
+
+/* 头部导航 */
+
+.con-warp .logo img {
+    max-width: 150px;
+    width: 100%;
+}
+
+header {
+    padding: 10px 0;
+    overflow: hidden;
+    background: url("../images/header_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+header a {
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 5px;
+    color: rgb(175, 127, 127);
+}
+
+header nav ul {
+    margin: 0;
+}
+
+header nav li {
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* 激活状态 */
+
+.active {
+    background: rgb(111, 210, 218);
+}
+
+header nav li a:hover {
+    color: #efefef;
+}
+
+/* 主要内容 */
+
+@media only screen and (min-width: 641px) {
+    .am-g-fixed {
+        min-width: 1050px;
+    }
+}

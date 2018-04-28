@@ -10,13 +10,7 @@
     <link rel="stylesheet" href="./css/iconfont.css">
     <link rel="stylesheet" href="./css/page.css">
     <title>技术分享</title>
-    <style>
-    /* 评论区样式 */
-    .con-left-comment li img{
-        width: 80px;
-        height: 60px;
-    }
-    </style>
+
 </head>
 
 <body>
@@ -32,7 +26,7 @@
                         <img src="./images/logo.png" alt="logo">
                     </li>
                     <li class="am-u-md-2">
-                        <a href="#">回到门前</a>
+                        <a href="#">首页门面</a>
                     </li>
                     <li class="am-u-md-2">
                         <a href="#" class="active">技术分享</a>
@@ -68,19 +62,59 @@
                 <!-- 文章详情 -->
                 <div class="con-left-article-con">
                     <p class="am-text-center">这里使用百度ueditor进行编辑</p>
+                    <div>
+                        <ul class="am-pagination">
+                            <li class="am-pagination-prev">
+                                <a href="" style="background-color: transparent; border: none;">&laquo; 上一篇文章的标题</a>
+                            </li>
+                            <li class="am-pagination-next">
+                                <a href="" style="background-color: transparent; border: none;">下一篇文章的标题 &raquo;</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- 文章评论区 -->
                 <!-- 用户注册按照IP来 -->
                 <div class="con-left-comment">
-                    <ul>
-                        <li class="am-g">
-                            <div class="am-u-sm-2 am-text-center"><img src="./images/wallpaper.jpg" alt="用户头像"></div>
-                            <div class="am-u-sm-10 bg-color-2">
-                                <p class="am-margin-0">这个文章真的是叼炸天</p>
-                                <p class="user-comment-info am-margin-0 ">
-                                    <span class="am-margin">张三</span><time class="am-margin-lg">2018-4-3</time>
-                                </p>
+                    <!-- 提交评论 -->
+                    <div class="">
+                        <form class="am-form" method="post">
+                            <div class="am-margin-bottom-sm">
+                                <label for="doc-ta-1" class="am-text-secondary">赶紧
+                                    <a href="">登陆</a>发表评论吧：</label>
+                                <textarea class="am-radius" rows="5" cols="10" id="doc-ta-1"></textarea>
                             </div>
+                            <p class="am-cf am-margin-top-0">
+                                <button type="submit" class="am-btn am-btn-primary am-radius am-fr">发表评论</button>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="article-comment-title">
+                        <p class="am-margin-0 am-text-primary border-bottom">
+                            <img src="./images/comment.png" alt="评论" width="20px" height="20px" style="width: 20px;">
+                            <span>(20)</span>个小伙伴在吐槽
+                        </p>
+                    </div>
+                    <ul>
+                        <li class="">
+                            <article class="am-comment">
+                                <a href="#link-to-user-home">
+                                    <img src="./images/wallpaper.jpg" alt="" class="am-comment-avatar" width="48" height="48" />
+                                </a>
+                                <div class="am-comment-main">
+                                    <header class="am-comment-hd">
+                                        <!--<h3 class="am-comment-title">评论标题</h3>-->
+                                        <div class="am-comment-meta">
+                                            <a href="#link-to-user" class="am-comment-author">某人</a>
+                                            评论于
+                                            <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-12 15:30</time>
+                                        </div>
+                                    </header>
+                                    <div class="am-comment-bd">
+                                        评论的内容
+                                    </div>
+                                </div>
+                            </article>
                         </li>
                     </ul>
                 </div>
@@ -209,7 +243,6 @@
             <p class="am-text-center am-margin-0 am-text-sm">&copy;版权所有,本网站服务器为
                 <a href="#">阿里云</a>|图床为
                 <a href="#">七牛云存储</a>|备案号：皖：icp201758</p>
-            <p class="am-text-center am-margin-0 am-text-sm">站长统计 | 今日IP[2651] | 今日PV[8599] | 昨日IP[4225] | 昨日PV[14230] | 当前在线[145]</p>
         </footer>
     </div>
 
