@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/amazeui/dist/css/amazeui.min.css">
+    <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/page.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <title>技术分享</title>
+</head>
+
+<body>
+    <div class="warp">
+        <div class="header-warp"></div>
+        <div class="main-warp am-g am-g-fixed am-margin-top-sm">
+            <div  class="con-left am-u-md-8"></div>
+            <div class="con-right am-u-md-4 "></div>
+        </div>
+        <div class="footer-warp"></div>
+    </div>
+    <script src="./js/loding.js"></script>
+    <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
+    <!-- 菜单鼠标hover事件 -->
+    <script>
+        $(document).ready(function () {
+            $('.warp header li a').on({
+                mouseover: function () {
+                    $(this).addClass('active');
+                },
+                mouseout: function () {
+                    $(this).removeClass('active');
+                    $('.warp header li a').eq(1).addClass('active');
+                }
+            });
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            autoplay: true, //自动播放
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>

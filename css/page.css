@@ -4,12 +4,38 @@ body {
 }
 img{
     width: 100%;
+    vertical-align: bottom;
+}
+.bg-color-2{
+    background: rgba(173, 165, 165, 0.3);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 ul {
     list-style: none;
     padding: 0;
 }
+ol{
+    margin: 0;
+}
+/* bg-color */
+.bg-color{
+    background: rgba(255,255,255,.7);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* 表格 */
+.am-table>tbody>tr>td,
+.am-table>tbody>tr>th,
+.am-table>tfoot>tr>td,
+.am-table>tfoot>tr>th,
+.am-table>thead>tr>td,
+.am-table>thead>tr>th{
+    border-top:transparent;
+}
+
 
 .am-g-fixed {
     max-width: 1100px;
@@ -39,7 +65,7 @@ header a {
     display: inline-block;
     padding: 0px 10px;
     border-radius: 5px;
-    color: #fff;
+    color: rgb(175, 127, 127);
 }
 
 header nav ul {
@@ -70,9 +96,7 @@ header nav li a:hover {
         min-width: 1050px;
     }
 }
-.main-con>div{
-    border: 1px solid #ccc;
-}
+
 /*标题 */
 .border-bottom{
     border-bottom: 1px solid #ccc;
@@ -91,9 +115,37 @@ header nav li a:hover {
 /* 右侧 */
 .con-right-1 a{
     display: inline-block;
-    margin: 5px;
+    margin: 5px 10px;
     height: 50px;
     width: 50px;
     border-radius: 5px;
-    background: cadetblue;
+}
+.con-rg-a-bg-1{
+    background: url('../images/weibo.png') no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+}
+.con-rg-a-bg-2{
+    background: url('../images/weixin.png') no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+}
+.con-rg-a-bg-3{
+    background: url('../images/mail.png') no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+}
+.con-rg-a-bg-4{
+    background: url('../images/GitHub.png') no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+}
+
+.con-right-4 .am-table a{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
 }

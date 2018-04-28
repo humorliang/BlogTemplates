@@ -8,9 +8,18 @@ ul {
     list-style: none;
     padding: 0;
 }
-.border-0 td{
+
+/* bg-color */
+
+.bg-color {
+    background: rgba(255, 255, 255, .7);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.border-0 td {
     border-color: transparent !important;
-    border:0;
+    border: 0;
 }
 
 .font-col-1 {
@@ -55,14 +64,13 @@ header {
     overflow: hidden;
     background: url("../images/header_bg.jpg") no-repeat;
     background-size: 100% 100%;
- 
 }
 
 header a {
     display: inline-block;
     padding: 0px 10px;
     border-radius: 5px;
-    color: #fff;
+    color: rgb(175, 127, 127);
 }
 
 header nav ul {
@@ -81,9 +89,6 @@ header nav li {
 
 .active {
     background: rgb(111, 210, 218);
-}
-header nav li a:hover{
-    color: #efefef;
 }
 
 /* 内容部分 */
@@ -105,34 +110,9 @@ header nav li a:hover{
 }
 
 /* 轮播图 */
-
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-
 .swiper-container img {
     max-height: 300px;
     width: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
 }
 
 .swiper-button-prev,
@@ -140,7 +120,7 @@ header nav li a:hover{
     height: 30px;
 }
 
-/* 鸡汤 */
+/* 鸡汤文字*/
 
 .main-content .bar-info-con p {
     width: 100%;
@@ -168,7 +148,6 @@ header nav li a:hover{
 .post-list-items li {
     margin: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
@@ -201,7 +180,6 @@ header nav li a:hover{
     min-width: 330px;
     width: 100%;
     height: 340px;
-    border: 1px solid rgb(75, 224, 112);
 }
 
 .personal-info img {
@@ -215,7 +193,6 @@ header nav li a:hover{
     width: 50px;
     height: 50px;
     line-height: 50px;
-    border: 1px solid rgb(59, 209, 147);
     border-radius: 50%;
     margin: 10px;
     text-align: center;

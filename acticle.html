@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="./css/iconfont.css">
     <link rel="stylesheet" href="./css/page.css">
     <title>技术分享</title>
+    <style>
+    /* 评论区样式 */
+    .con-left-comment li img{
+        width: 80px;
+        height: 60px;
+    }
+    </style>
 </head>
 
 <body>
@@ -45,144 +52,35 @@
         <div class="main-con am-g am-g-fixed am-margin-top-sm">
             <!-- 左侧 -->
             <div class="con-left am-u-md-8">
-                <!-- 文章标题 -->
-                <div class="con-left-title">
-                    <h1 class="am-margin-top-sm am-margin-bottom-sm am-padding-bottom-xs border-bottom">技术分享</h1>
+                <!-- 文章详情页面 -->
+                <!-- 导航 -->
+                <div class="con-left-nav-map border-bottom">
+                    <ol class="am-breadcrumb am-margin-0">
+                        <li>
+                            <a href="#">首页</a>
+                        </li>
+                        <li>
+                            <a href="#">分类</a>
+                        </li>
+                        <li class="am-active">内容</li>
+                    </ol>
                 </div>
-                <!-- 文章列表项 -->
-                <div class="con-left-list">
+                <!-- 文章详情 -->
+                <div class="con-left-article-con">
+                    <p class="am-text-center">这里使用百度ueditor进行编辑</p>
+                </div>
+                <!-- 文章评论区 -->
+                <!-- 用户注册按照IP来 -->
+                <div class="con-left-comment">
                     <ul>
-                        <li class="bg-color am-margin-bottom-sm">
-                            <div class="post-title am-cf am-margin-xs am-padding-xs">
-                                <a href="#" class="am-fl am-margin-right-sm am-btn am-btn-secondary am-radius am-btn-sm">Python</a>
-                                <h2 class="am-fl am-margin-0">关于Python装饰器的用法</h2>
+                        <li class="am-g">
+                            <div class="am-u-sm-2 am-text-center"><img src="./images/wallpaper.jpg" alt="用户头像"></div>
+                            <div class="am-u-sm-10 bg-color-2">
+                                <p class="am-margin-0">这个文章真的是叼炸天</p>
+                                <p class="user-comment-info am-margin-0 ">
+                                    <span class="am-margin">张三</span><time class="am-margin-lg">2018-4-3</time>
+                                </p>
                             </div>
-                            <div class="post-con">
-                                <div class="post-con-middle am-g">
-                                    <div class="am-u-md-4">
-                                        <img src="./images/post.jpg" alt="">
-                                    </div>
-                                    <div class="am-u-md-8">
-                                        <p>了解了正则表达式，想必一般情况下的匹配都不会出现什么问题，但是如果一些特殊情况，可能需要用到一些更高级的正则表达式匹配操作，本节我们来说明一下正则表达式的一个较常用又比较重要的知识点——零宽断言。
-                                            实例引入 首先我们来看一个例子，这里有一段问答对话： 问：
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="post-con-footer am-g">
-                                    <div class="am-u-md-4"></div>
-                                    <ul class="am-u-md-8 am-margin-0 am-cf">
-                                        <li class="am-fl">
-                                            <a href="#">
-                                                <img src="./images/biaoqian.png" alt="">
-                                                <span>技术分享</span>
-                                            </a>
-                                        </li>
-                                        <li class="am-fl">
-                                            <a href="#">
-                                                <img src="./images/time.png" alt="">
-                                                <time>2018-2-3</time>
-                                            </a>
-                                        </li>
-                                        <li class="am-fl">
-                                            <a href="#">
-                                                <img src="./images/comment.png" alt="">
-                                                <span>(10)</span>
-                                            </a>
-                                        </li>
-                                        <li class="am-fl">
-                                            <a href="#">
-                                                <img src="./images/watch.png" alt="">
-                                                <span>(10)</span>
-                                            </a>
-                                        </li>
-                                        <li class="am-fl">
-                                            <a href="#">
-                                                <img src="./images/zan.png" alt="">
-                                                <sapn>10</sapn>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="bg-color am-margin-bottom-sm">
-                            <div class="post-title am-cf am-margin-xs am-padding-xs">
-                                <a href="#" class="am-fl am-margin-right-sm am-btn am-btn-secondary am-radius am-btn-sm">Python</a>
-                                <h2 class="am-fl am-margin-0">关于Python装饰器的用法</h2>
-                            </div>
-                            <div class="post-con">
-                                <div class="post-con-middle am-g">
-                                    <div class="am-u-md-4">
-                                        <img src="./images/post.jpg" alt="">
-                                    </div>
-                                    <div class="am-u-md-8">
-                                        <p>了解了正则表达式，想必一般情况下的匹配都不会出现什么问题，但是如果一些特殊情况，可能需要用到一些更高级的正则表达式匹配操作，本节我们来说明一下正则表达式的一个较常用又比较重要的知识点——零宽断言。
-                                            实例引入 首先我们来看一个例子，这里有一段问答对话： 问：
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="post-con-footer am-g">
-                                    <div class="am-u-md-4"></div>
-                                    <ul class="am-u-md-8 am-margin-0 am-cf">
-                                        <li class="am-fl">
-                                            <a href="#">
-                                                <img src="./images/biaoqian.png" alt="">
-                                                <span>技术分享</span>
-                                            </a>
-                                        </li>
-                                        <li class="am-fl">
-                                            <a href="#">
-                                                <img src="./images/time.png" alt="">
-                                                <time>2018-2-3</time>
-                                            </a>
-                                        </li>
-                                        <li class="am-fl">
-                                            <a href="#">
-                                                <img src="./images/comment.png" alt="">
-                                                <span>(10)</span>
-                                            </a>
-                                        </li>
-                                        <li class="am-fl">
-                                            <a href="#">
-                                                <img src="./images/watch.png" alt="">
-                                                <span>(10)</span>
-                                            </a>
-                                        </li>
-                                        <li class="am-fl">
-                                            <a href="#">
-                                                <img src="./images/zan.png" alt="">
-                                                <sapn>10</sapn>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- 分页 -->
-                <div class="con-left-page">
-                    <ul class="am-pagination am-pagination-centered">
-                        <li class="am-disabled">
-                            <a href="#">&laquo;</a>
-                        </li>
-                        <li class="am-active">
-                            <a href="#">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <a href="#">5</a>
-                        </li>
-                        <li>
-                            <a href="#">&raquo;</a>
                         </li>
                     </ul>
                 </div>
@@ -280,7 +178,7 @@
                                     <a href="" class="am-btn-secondary ">css</a>
                                 </td>
                             </tr>
-                           
+
                         </table>
                     </div>
                 </div>
@@ -292,9 +190,15 @@
                     <div>
                         <table class="am-table">
                             <tr>
-                                <td><a href="#">百度</a></td>
-                                <td><a href="#">腾讯</a></td>
-                                <td><a href="#">网易</a></td>
+                                <td>
+                                    <a href="#">百度</a>
+                                </td>
+                                <td>
+                                    <a href="#">腾讯</a>
+                                </td>
+                                <td>
+                                    <a href="#">网易</a>
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -302,10 +206,12 @@
             </div>
         </div>
         <footer class="am-margin">
-            <p class="am-text-center am-margin-0 am-text-sm">&copy;版权所有,本网站服务器为<a href="#">阿里云</a>|图床为<a href="#">七牛云存储</a>|备案号：皖：icp201758</p>
+            <p class="am-text-center am-margin-0 am-text-sm">&copy;版权所有,本网站服务器为
+                <a href="#">阿里云</a>|图床为
+                <a href="#">七牛云存储</a>|备案号：皖：icp201758</p>
             <p class="am-text-center am-margin-0 am-text-sm">站长统计 | 今日IP[2651] | 今日PV[8599] | 昨日IP[4225] | 昨日PV[14230] | 当前在线[145]</p>
         </footer>
-    </div> 
+    </div>
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
